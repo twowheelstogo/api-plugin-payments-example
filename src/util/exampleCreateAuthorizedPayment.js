@@ -19,12 +19,10 @@ export default async function exampleCreateAuthorizedPayment(context, input) {
   const {
     amount,
     billingAddress,
-    shopId,
-    paymentData: {
-      fullName
-    }
+    shopId
   } = input;
-
+  console.log(input);
+  throw new Error("errror demo");
   return {
     _id: Random.id(),
     address: billingAddress,
