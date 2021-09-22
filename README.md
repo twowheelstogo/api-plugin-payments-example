@@ -1,4 +1,4 @@
-# api-plugin-payments-example
+# api-plugin-payments-none
 
 [![npm (scoped)](https://img.shields.io/npm/v/@reactioncommerce/api-plugin-payments-example.svg)](https://www.npmjs.com/package/@reactioncommerce/api-plugin-payments-example)
 [![CircleCI](https://circleci.com/gh/reactioncommerce/api-plugin-payments-example.svg?style=svg)](https://circleci.com/gh/reactioncommerce/api-plugin-payments-example)
