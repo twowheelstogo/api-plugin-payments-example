@@ -1,12 +1,12 @@
 import Random from "@reactioncommerce/random";
 
-const METHOD = "credit";
-const PACKAGE_NAME = "example-paymentmethod";
-const PAYMENT_METHOD_NAME = "iou_example";
+const METHOD = "none";
+const PACKAGE_NAME = "none";
+const PAYMENT_METHOD_NAME = "none";
 
 // NOTE: The "processor" value is lowercased and then prefixed to various payment Meteor method names,
 // so for example, if this is "Example", the list refunds method is expected to be named "example/refund/list"
-const PROCESSOR = "Example";
+const PROCESSOR = "none";
 
 /**
  * @summary As an example and for demos, this non-production payment method creates a payment
@@ -22,17 +22,14 @@ export default async function exampleCreateAuthorizedPayment(context, input) {
     shopId
   } = input;
   console.log(input);
-  throw new Error("errror demo");
+
   return {
     _id: Random.id(),
     address: billingAddress,
     amount,
     createdAt: new Date(),
-    data: {
-      fullName,
-      gqlType: "ExampleIOUPaymentData" // GraphQL union resolver uses this
-    },
-    displayName: `IOU from ${fullName}`,
+    data: null,
+    displayName: `No Payment method`,
     method: METHOD,
     mode: "authorize",
     name: PAYMENT_METHOD_NAME,

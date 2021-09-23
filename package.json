@@ -1,5 +1,5 @@
 {
-  "name": "@reactioncommerce/api-plugin-payments-example",
+  "name": "api-plugin-payments-none",
   "description": "Example Payments plugin for the Reaction API",
   "version": "0.0.0-development",
   "main": "index.js",

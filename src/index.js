@@ -14,20 +14,17 @@ import startup from "./startup.js";
  */
 export default async function register(app) {
   await app.registerPlugin({
-    label: "Example Payments",
-    name: "payments-example-2",
+    label: "No Payment method",
+    name: "none",
     version: pkg.version,
     i18n,
-    graphQL: {
-      schemas
-    },
     functionsByType: {
       startup: [startup]
     },
     paymentMethods: [{
-      name: "iou_example",
+      name: "none",
       canRefund: true,
-      displayName: "IOU EXAMPLE",
+      displayName: "No Payment method",
       functions: {
         capturePayment: exampleCapturePayment,
         createAuthorizedPayment: exampleCreateAuthorizedPayment,
